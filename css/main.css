@@ -5,17 +5,36 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+}
+header, footer{
   text-align: center;
 }
 main{
-  width: 80%;
+  position: relative;
+  width: 50%;
   margin: auto;
 }
 .riga {
+  height: 150px;
   margin: 30px;
 }
+.primo{
+  position: absolute;
+  left:0%;
+}
+.seconda{
+  position: absolute;
+  left: 28%;
+}
+.terza{
+  position: absolute;
+  right: 28%;
+}
+.ultimo{
+  position: absolute;
+  right: 0px;
+}
 .carta{
-  position: relative;
   display: inline-block;
   height: 150px;
   width: 120px;
@@ -23,22 +42,40 @@ main{
   background-size: contain;
   border-radius: 5px;
   margin: 0px 10px;
-  z-index: 2;
+  color: rgba(0,0,0,0);
+  text-align: center;
+  line-height: 250px;
+  font-size: 25px;
 }
 span{
   position: absolute;
   bottom:5px;
   left: 5px;
-  background-color: rgba(0,0,0,0);
 }
 .carta:hover{
-
+  background-image: none;
   background-color: white;
-  background-size:contain;
   background-repeat:no-repeat;
-
+  content: "Ciao";
+  color: red;
+}
+.balloon::before{
+  content:"Air Baloon";
 }
 .balloon:hover{
   background-image: url(../img/noun_air_balloon_3134741.png);
   z-index: 1;
+}
+.Bicycle::before{
+  content:"Bicycle";
+}
+.Bicycle:hover{
+  background-image: url(../img/noun_Bicycle_3134821.png);
+  z-index: 1;
+}
+.Cruise_Ship::before{
+  content:"Cruise Ship";
+}
+.Cruise_Ship:hover{
+  background-image: url(../img/noun_Cruise_Ship_3134824.png);
 }
