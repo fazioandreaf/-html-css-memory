@@ -47,16 +47,10 @@ main{
   line-height: 250px;
   font-size: 25px;
 }
-span{
-  position: absolute;
-  bottom:5px;
-  left: 5px;
-}
 .carta:hover{
   background-image: none;
   background-color: white;
   background-repeat:no-repeat;
-  content: "Ciao";
   color: red;
 }
 .balloon::before{
