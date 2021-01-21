@@ -17,7 +17,18 @@ main{
   display: inline-block;
   height: 150px;
   width: 120px;
-  background-color: red;
+  background-image: url(../img/pattern.png);
+  background-size: contain;
   border-radius: 5px;
   margin: 0px 10px;
+}
+.carta:hover{
+  background-color: white;
+  background-size:contain;
+  background-repeat:no-repeat;
+}
+.balloon:hover{
+  background-image: url(../img/noun_air_balloon_3134741.png);
+  content: "Balloon";
+  color: red;
 }
