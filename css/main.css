@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
 *{
+  background-color: #add8e6;
   font-family: 'Nerko One',cursive;
   margin: 0px;
   padding: 0px;
@@ -14,6 +15,7 @@ main{
   margin: 30px;
 }
 .carta{
+  position: relative;
   display: inline-block;
   height: 150px;
   width: 120px;
@@ -21,14 +23,22 @@ main{
   background-size: contain;
   border-radius: 5px;
   margin: 0px 10px;
+  z-index: 2;
+}
+span{
+  position: absolute;
+  bottom:5px;
+  left: 5px;
+  background-color: rgba(0,0,0,0);
 }
 .carta:hover{
+
   background-color: white;
   background-size:contain;
   background-repeat:no-repeat;
+
 }
 .balloon:hover{
   background-image: url(../img/noun_air_balloon_3134741.png);
-  content: "Balloon";
-  color: red;
+  z-index: 1;
 }
