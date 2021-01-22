@@ -11,12 +11,12 @@ header, footer{
 }
 main{
   position: relative;
-  width: 50%;
+  width: 80vw;
   margin: auto;
 }
 .riga {
   height: 150px;
-  margin: 30px;
+  margin: 30px 0px;
 }
 .primo{
   position: absolute;
@@ -24,11 +24,11 @@ main{
 }
 .seconda{
   position: absolute;
-  left: 28%;
+  left: calc((80vw - 120px)/3);
 }
 .terza{
   position: absolute;
-  right: 28%;
+  right: calc((80vw - 120px)/3);;
 }
 .ultimo{
   position: absolute;
@@ -41,7 +41,6 @@ main{
   background-image: url(../img/pattern.png);
   background-size: contain;
   border-radius: 5px;
-  margin: 0px 10px;
   color: rgba(0,0,0,0);
   text-align: center;
   line-height: 250px;
