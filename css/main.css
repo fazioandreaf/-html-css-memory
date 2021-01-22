@@ -23,12 +23,10 @@ main{
   left:0%;
 }
 .seconda{
-  position: absolute;
-  left: calc((80vw - 120px)/3);
+  margin-left: 27%;
 }
 .terza{
-  position: absolute;
-  right: calc((80vw - 120px)/3);;
+  margin-left: 6%;
 }
 .ultimo{
   position: absolute;
@@ -37,7 +35,7 @@ main{
 .carta{
   display: inline-block;
   height: 150px;
-  width: 120px;
+  width: 21%;
   background-image: url(../img/pattern.png);
   background-size: contain;
   border-radius: 5px;
